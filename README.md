@@ -29,3 +29,6 @@ To keep the workflow lightweight and integrated, this project utilizes:
 3. Connect the VS Code PostgreSQL extension to your local database instance (e.g., `localhost`).
 4. Select the target database (e.g., `LearnSQL`) via the VS Code status bar.
 5. Highlight any query in the `.sql` files and use the execution shortcut (`Ctrl+E, Ctrl+E` or `Cmd+E, Cmd+E`) to view results in the integrated grid panel.
+
+Notes
+1.select to view db,distict to view unique values
