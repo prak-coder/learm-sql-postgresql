@@ -19,4 +19,9 @@ SELECT * FROM testtable
 
 DROP TABLE testtable;
 
+SELECT  city FROM Customers
+LIMIT 30
 
+SELECT * FROM Customers
+ORDER BY CustomerName DESC
+LIMIT 10;
