@@ -1,0 +1,48 @@
+SELECT * FROM customers
+WHERE customername LIKE 'B%';
+
+SELECT * FROM customers
+WHERE city LIKE '%on%';
+
+SELECT * FROM Customers
+WHERE city LIKE 'L_nd__';
+
+SELECT * FROM Customers
+WHERE CustomerName LIKE 'B__%';
+
+-- SELECT * FROM customers
+-- WHERE customerName LIKE '[bsp]%'; [] not in pgsql
+SELECT * FROM Customers
+WHERE Country NOT IN ('Germany', 'France', 'UK');
+
+
+SELECT * FROM Customers
+WHERE CustomerID IN (SELECT CustomerID FROM Orders);
+
+SELECT * FROM Products
+WHERE Price BETWEEN 10 AND 20;
+
+SELECT * FROM Products
+WHERE Price NOT BETWEEN 10 AND 20;
+
+SELECT * FROM Products
+WHERE Price BETWEEN 10 AND 20
+AND categoryID in (1,2,3)
+
+SELECT * FROM Products
+WHERE ProductName BETWEEN 'Geitost' AND 'Louisiana Hot Spiced Okra'
+ORDER BY ProductName;
+
+
+SELECT CustomerID AS ID, CustomerName AS Customer
+FROM Customers;
+
+SELECT ProductName AS "My Great Products"
+FROM Products;
+--  [] doesnot work in pg
+
+
+SELECT CustomerName, CONCAT(Address,', ',PostalCode,', ',City,', ',Country) AS Address
+FROM Customers;
+
+        

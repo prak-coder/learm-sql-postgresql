@@ -55,7 +55,7 @@ GROUP BY CategoryID
 ORDER BY  CategoryID; 
 
 
-SELECT * FROM products
+SELECT * FROM products WHERE categoryid=1
 
 SELECT count(*) FROM products
 
